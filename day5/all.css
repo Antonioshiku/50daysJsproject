@@ -1,0 +1,50 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.con {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(./photo.avif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: blur(1.5rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  color: white;
+  font-size: 40px;
+  font-family: "Lato";
+  position: absolute;
+  top: 50%;
+  left: 47%;
+}
+
+.hide {
+  display: none;
+}
+.first {
+  opacity: 0.6;
+}
+.sec {
+  opacity: 0.4;
+}
+.third {
+  opacity: 0.2;
+}
+.show {
+  filter: blur(0);
+}
+.firstB {
+  filter: blur(0.8rem);
+}
+.secB {
+  filter: blur(0.4rem);
+}
+.thirdB {
+  filter: blur(0.2rem);
+}
