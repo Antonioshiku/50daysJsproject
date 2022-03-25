@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+     --font-family:'Lato';
+}
+.con{
+       width: 100%;
+       height: 100vh;
+       display: flex;
+
+
+}
+.first_scroll{
+      width: 50%;
+      background-image: url(./ps.jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       position: relative;
+    
+}
+.color_overlay{
+      position: absolute;
+      background-color: #7f7dec;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: .7;
+}
+.inner_section{
+       margin-bottom: 50px;
+       display: flex;
+       flex-direction: column;
+       align-items: center; 
+       position: relative;
+       flex-wrap: nowrap;
+       
+}
+.inner_section button{
+          width: 220px;
+          height: 60px;
+          background-color: inherit;
+          border: 3px solid white;
+          color: white;
+          font-size: 23px;
+          margin-top: 20px;
+          font-family: var(--font-family);
+          border-radius: 3px;
+          position: relative;
+}
+.first_scroll h1{
+    font-family: var(--font-family) ;
+    font-size: 50px;
+    color: white;
+    position: relative;
+}
+
+.sec_scroll{
+     width: 50%;
+      background-image: url(./xbox.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      
+}
+.sec_color_overlay{
+    position: absolute;
+    background-color: #2a292a;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: .7;
+}
+.sec_scroll h1{
+    font-family: var(--font-family) ;
+    font-size: 50px;
+    color: white;
+    flex-wrap: nowrap;
+}
+
+
+/* From Js Classlist */
+.showF{
+         width: 148%;
+         transition: all 1s ease-in;
+         z-index: 3;
+        
+}
+.showS{
+    width: 148%;
+    transition: all 1s ease-in;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+.showS h1{
+     z-index: 1;
+
+}
+
+.hideF{
+      width: 50%;
+      transition: all 1s ease-in-out;
+      transform-origin: right;
+}
+.hideS{
+    width: 50%;
+    transition: all 1s ease-in-out;
+    transform-origin: left;
+
+}
